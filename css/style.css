@@ -2,15 +2,15 @@
     background-color: #040b14;
 }
 
-ul.menu a{
+#menu a{
     color: #a8a9b4;
 }
 
-ul.menu .active a {
+#menu li.active a {
     color: white;
 }
 
-ul.social a {
+#social a {
     color: white;
     background-color: #212431;
     border-radius: 50%;
@@ -20,17 +20,12 @@ ul.social a {
     margin-right: 0.5em;
 }
 
-ul.social p {
-    color: #fff;
-    margin-right: 0.5em;
-}
-
-ul.menu a:hover {
+#menu a:hover {
     color: #fff;
     transition: 0.3s;
 }
 
-ul.social a:hover {
+#social a:hover {
     background-color: #149ddd;
     transition: 0.3s;
 }
@@ -49,7 +44,25 @@ ul.social a:hover {
     background-color: #149ddd;
 }
 
-#navbarSupportedContent.show{
-    width: 100px;
-    border: 1px solid red;
+/* Navbar expanded */
+
+#navbarSupportedContent.show #menu {
+    text-align: center;
+}
+
+#navbarSupportedContent.show #menu li:hover {
+    background-color: #149ddd;
+    transition: 0.3s;
+    border-radius: 1%;
+}
+
+#navbarSupportedContent.show #social {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+#navbarSupportedContent.show #social li{
+    display: inline-block;
+    margin: 1em auto;
 }
