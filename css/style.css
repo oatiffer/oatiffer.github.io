@@ -1,0 +1,55 @@
+#navigation {
+    background-color: #040b14;
+}
+
+ul.menu a{
+    color: #a8a9b4;
+}
+
+ul.menu .active a {
+    color: white;
+}
+
+ul.social a {
+    color: white;
+    background-color: #212431;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    margin-right: 0.5em;
+}
+
+ul.social p {
+    color: #fff;
+    margin-right: 0.5em;
+}
+
+ul.menu a:hover {
+    color: #fff;
+    transition: 0.3s;
+}
+
+ul.social a:hover {
+    background-color: #149ddd;
+    transition: 0.3s;
+}
+
+.navbar-toggler {
+    color: #fff;
+    background-color: #212431;
+}
+
+.navbar-toggler:hover {
+    background-color: #149ddd;
+    transition: 0.3s;
+}
+
+.navbar-toggler:active {
+    background-color: #149ddd;
+}
+
+#navbarSupportedContent.show{
+    width: 100px;
+    border: 1px solid red;
+}
