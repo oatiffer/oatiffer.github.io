@@ -1,3 +1,15 @@
+body {
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+h1 {
+    position: relative;
+    margin-top: 5em;
+    text-align: center;
+}
+
 #navigation {
     background-color: #040b14;
 }
@@ -22,6 +34,8 @@
 
 #menu a:hover {
     color: #fff;
+    background-color: #149ddd;
+    border-radius: 5%;
     transition: 0.3s;
 }
 
