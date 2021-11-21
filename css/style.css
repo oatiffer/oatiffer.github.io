@@ -69,25 +69,29 @@ h1 {
 
 /* Navbar expanded */
 
-#navbarSupportedContent.show #menu a {
-    width: 100%;
-    text-align: center;   
+@media screen and (max-width:767px) {
+    #navbarSupportedContent #menu a {
+        width: 100%;
+        text-align: center;   
+    }
+    
+    #navbarSupportedContent #menu a:hover {
+        background-color: #149ddd;
+        transition: 0.3s;
+        border-radius: 1%;
+    }
+    
+    #navbarSupportedContent #social {
+        width: 100%;
+        text-align: center;
+        margin: 1em 0;
+        display: inline-block;
+    }
+    
+    #navbarSupportedContent #social li {
+        display: inline-block;
+        text-align: center;
+    }
 }
 
-#navbarSupportedContent.show #menu li:hover {
-    background-color: #149ddd;
-    width: 100%;
-    transition: 0.3s;
-    border-radius: 1%;
-}
 
-#navbarSupportedContent.show #social {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-}
-
-#navbarSupportedContent.show #social li{
-    display: inline-block;
-    margin: 1em auto;
-}
