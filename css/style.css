@@ -1,29 +1,28 @@
-body {
-    font-family: "Space Mono", monospace;
+/***** General CSS rules *****/
+
+html {
+    font-size: 16px;
 }
 
-h1 {
-    position: relative;
-    margin-top: 5em;
-    text-align: center;
+body {
+    background-color: #050d18;
+    font-family: "Source Sans Pro", monospace;
 }
+
+/***** Navbar CSS Rules *****/
 
 #navigation {
-    background-color: #040b14;
+    background-color: #050d18;
+    font-family: "Source Code Pro", monospace;
+    opacity: 0.8;
+    z-index: 10;
 }
 
 #menu a {
+    margin-left: 1rem;
     color: #a8a9b4;
-    width: 5rem;
-    font-family: "Space Mono", monospace;
     font-size: small;
-    letter-spacing: 0.05rem;
     text-align: center;
-    animation: fadeIn linear 0.5s;
-    -webkit-animation: fadeIn linear 0.5s;
-    -moz-animation: fadeIn linear 0.5s;
-    -o-animation: fadeIn linear 0.5s;
-    -ms-animation: fadeIn linear 0.5s;
 }
 
 #menu li.active a {
@@ -39,19 +38,11 @@ h1 {
     height: 32px;
     text-align: center;
     margin-right: 0.8rem;
-    animation: fadeIn linear 0.5s;
-    -webkit-animation: fadeIn linear 0.5s;
-    -moz-animation: fadeIn linear 0.5s;
-    -o-animation: fadeIn linear 0.5s;
-    -ms-animation: fadeIn linear 0.5s;
 }
 
 #menu a:hover {
     color: #fff;
-    /*background-color: #149ddd;*/
     border-bottom: 1px solid #149ddd;
-    /*border-radius: 5%;*/
-    /*transform: scale(1.05);*/
     transition: 0.3s;
 }
 
@@ -80,9 +71,56 @@ h1 {
     background-color: #149ddd;
 }
 
+/***** FadeIn animation CSS *****/
+
+#menu.fade-in,
+#social.fade-in {
+    animation: fadeIn linear 0.5s;
+    -webkit-animation: fadeIn linear 0.5s;
+    -moz-animation: fadeIn linear 0.5s;
+    -o-animation: fadeIn linear 0.5s;
+    -ms-animation: fadeIn linear 0.5s;
+}
+
+/***** Jumbotron CSS Rules *****/
+
+#home .container {
+    width: 70%;
+    /*filter: drop-shadow(1px 4px 4px #10162F);*/
+}
+
+#home .jumbotron {
+    margin-top: 1.5rem;
+    background-color: #050d18;
+}
+
+#home h1 {
+    font-size: 2rem;
+    color: darkgray;
+}
+
+#home h2 {
+    font-size: 3rem;
+    color: whitesmoke;
+}
+
+#home h1, h2 {
+    font-weight: bold;
+}
+
+#home p.heading {
+    color: #149ddd;
+    margin-top: 1.5rem;
+    font-family: "Source Code Pro", monospace;
+}
+
+#home p.intro {
+    color: darkgray;
+}
+
 /***** Navbar for smaller screens *****/
 
-@media screen and (max-width:767px) {
+@media only screen and (max-width:767px) {
     #navbarSupportedContent #menu a {
         width: 5rem;
         margin: 0 auto;
@@ -97,7 +135,7 @@ h1 {
     #navbarSupportedContent #social {
         width: 100%;
         text-align: center;
-        margin: 1em 0;
+        margin: 1rem 0;
         display: inline-block;
     }
     
@@ -123,7 +161,7 @@ h1 {
     }
 }
 
-/***** Fade In animation for small screen navbar *****/
+/***** Fade In animation *****/
 
 @keyframes fadeIn {
     0% {opacity:0;}
@@ -150,7 +188,7 @@ h1 {
     100% {opacity:1;}
 }
 
-/***** Fade Out animation for small screen navbar *****/
+/***** Fade Out animation *****/
 
 @keyframes fadeOut {
     0% {opacity:1;}
