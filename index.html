@@ -21,7 +21,7 @@
 <body>
   <header>
     <!-- Navbar -->
-    <nav id="navigation" class="navbar navbar-expand-md">
+    <nav id="navigation" class="navbar navbar-expand-md fixed-top py-3">
       <button id="navbar-button" class="navbar-toggler" type="button" data-toggle="collapse"
         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -30,24 +30,24 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <!--<a class="navbar-brand" href="#">@</a>-->
-        <ul id="menu" class="navbar-nav mr-auto fade-in">
+        <ul id="menu" class="navbar-nav ml-auto mr-5 fade-in">
           <li class="nav-item active">
             <a class="nav-link" href="#home">
               Home<span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
 
-        <ul id="social" class="navbar-nav fade-in">
+        <!--<ul id="social" class="navbar-nav fade-in">
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/oatiffer" target="_blank"><i class="fab fa-github"></i></a>
           </li>
@@ -61,33 +61,78 @@
           <li class="nav-item">
             <a class="nav-link" href="#" target="_self"><i class="fas fa-file-download"></i></a>
           </li>
-        </ul>
+        </ul>-->
       </div>
     </nav>
   </header>
 
   <main>
     <section id="home">
-      <div class="container">
+      <div id="home" class="container">
         <div class="row">
-          <div class="column">
-            <div class="jumbotron p-5">
+          <div class="col">
+            <div class="jumbotron">
               <h1 class="fade-in delay-1">Hi, my name is Omar.</h1>
               <h2 class="fade-in delay-2">I'm an aspiring Back-End Developer.</h2>
               <p class="heading fade-in delay-3">Welcome to my website!</p>
               <div class="row">
                 <div class="col-7">
                   <p class="intro fade-in delay-4">
-                    Husband, father, and IT generalist with ten years of experience as a Technical Support/Technical Sales Engineer.
+                    Husband and father. IT generalist with ten years of experience as a Technical Support/Technical Sales Engineer.
                     Making a shift towards Back-End Development.
                   </p>
+                  <ul id="social" class="fade-in delay-5">
+                    <li>
+                      <a href="https://github.com/oatiffer" target="_blank">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/oatiffer" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/oatiffer/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" target="_self">
+                        <i class="fas fa-file-download"></i>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      </article>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="content">
+              <h3>About Me</h3>
+              <p>
+                IT generalist currently working as a Technical Sales Engineer. My experience over the past ten years 
+                has been focused on Technical Support (from end-user devices to Linux and VMware vSphere) and Technical 
+                Sales, providing support to the sales team during the sales cycle.<br /><br /> I recently decided to 
+                shift my career, so I am preparing to get back to a more hands-on role where I can use my knowledge and 
+                experience to build things, not just put them on paper. I am currently exploring a different area, 
+                following a Back-End Engineer learning path that will allow me to learn about the best of two worlds: 
+                building applications and building infrastructure to run those applications.<br /><br /> My short-term 
+                goal is preparing to tackle a Back-End Development role and possibly move towards DevOps in the long 
+                run. I am excited about this project and can't wait to see what the future holds!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><br /><br /><br /><br />
   </main>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
