@@ -38,7 +38,7 @@ body {
 
 #social {
     list-style-type: none;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 0;
 }
 
@@ -156,7 +156,7 @@ body {
     }
 
     .container {
-        width: 100%;
+        width: 90%;
     }
 
     #home .jumbotron {
