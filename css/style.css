@@ -36,31 +36,6 @@ body {
     color: white;
 }
 
-#social {
-    list-style-type: none;
-    margin-top: 1rem;
-    padding: 0;
-}
-
-#social li {
-    display: inline-block;
-    font-size: 1rem;
-    background-color: #212431;
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    text-align: center;
-    margin-right: 0.9rem;
-}
-
-#social i {
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    border-radius: 50%;
-    margin: 0.5rem auto;
-}
-
 #menu a:hover {
     color: #fff;
     border-bottom: 1px solid #149ddd;
@@ -122,6 +97,31 @@ body {
     color: darkgray;
 }
 
+#social {
+    list-style-type: none;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+#social li {
+    display: inline-block;
+    font-size: 1rem;
+    background-color: #212431;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    margin-right: 0.9rem;
+}
+
+#social i {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0.5rem auto;
+}
+
 /***** About Section CSS *****/
 
 #about .container {
@@ -163,6 +163,10 @@ body {
         margin-top: 0;
     }
 
+    #navbarSupportedContent ul {
+        width: 100%;
+    }
+
     #navbarSupportedContent #menu a {
         width: 5rem;
         margin: 0 auto;
@@ -174,27 +178,7 @@ body {
         transition: 0.3s;
     }
     
-    #navbarSupportedContent #social {
-        width: 100%;
-        text-align: center;
-        margin: 1rem 0;
-        display: inline-block;
-    }
-    
-    #navbarSupportedContent #social li {
-        display: inline-block;
-        text-align: center;
-    }
-
     #navbar-button.navbar-toggler.collapsed + #navbarSupportedContent #menu a {
-        animation: fadeOut linear 0.5s;
-        -webkit-animation: fadeOut linear 0.5s;
-        -moz-animation: fadeOut linear 0.5s;
-        -o-animation: fadeOut linear 0.5s;
-        -ms-animation: fadeOut linear 0.5s;
-    }
-
-    #navbar-button.navbar-toggler.collapsed + #navbarSupportedContent #social a {
         animation: fadeOut linear 0.5s;
         -webkit-animation: fadeOut linear 0.5s;
         -moz-animation: fadeOut linear 0.5s;
