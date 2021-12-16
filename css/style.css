@@ -123,7 +123,7 @@ body {
 #about .container, 
 #skills .container {
     margin-top: 7rem;
-    box-shadow: 0px 0px 16px #10162F;
+    box-shadow: 0.5rem 0.5rem 0.5rem #10162F;
 }
 
 #about .content, 
@@ -167,14 +167,15 @@ body {
 
 #skills a {
     color: darkgray;
-    font-size: 0.8rem;
-    font-family: "Source Sans Pro", monospace;
+    font-size: 0.7rem;
+    font-family: "Source Code Pro", monospace;
 }
 
 #skills a[aria-expanded="true"] {
     color: whitesmoke;
-    border-right: 1px solid #149ddd;
-    border-bottom: 1px solid #149ddd;
+    background-color: #10162F;
+    border-right: 1px solid #212431;
+    border-bottom: 1px solid #212431;
     transition: 0.1s;
     outline: 0;
 }
@@ -193,15 +194,29 @@ body {
 #infra p {
     color: whitesmoke;
     font-family: "Source Code Pro", monospace;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-align: center;
     margin: auto;
+}
+
+#coding i,
+#frameworks i,
+#infra i {
+    color: whitesmoke;
+    font-size: 1.4rem;
+    text-align: center;
 }
 
 #coding .row,
 #frameworks .row,
 #infra .row {
     margin-top: 1rem;
+}
+
+#coding .col-10,
+#frameworks .col-10,
+#infra .col-10 {
+    padding-top: 0.2rem;
 }
 
 #coding .progress,
@@ -214,6 +229,19 @@ body {
 #frameworks .progress-bar,
 #infra .progress-bar{
     background-color: #149ddd;
+}
+
+#scale li {
+    color: darkgray;
+    text-align: left;
+    letter-spacing: -0.05rem;
+    font-size: 0.7rem;
+    font-family: "Source Code Pro", sans;
+    margin-top: 0.5rem;
+}
+
+#scale span {
+    color: #149ddd;
 }
 
 /***** Navbar for smaller screens *****/
