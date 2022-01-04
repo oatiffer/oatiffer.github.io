@@ -3,19 +3,21 @@
 html {
     font-size: 16px;
     scroll-behavior: smooth;
-    scroll-padding-top: 5.4rem;
+    scroll-padding-top: 5.9rem;
 }
 
 body {
     position: relative;
-    top: 4.4rem;
+    top: 4.8rem;
     background-color: #050d18;
     font-family: "Source Sans Pro", sans-serif;
 }
 
+
 .container {
     width: 70%;
 }
+
 
 /***** Navbar CSS Rules *****/
 
@@ -28,7 +30,7 @@ body {
 #menu a {
     margin-left: 1rem;
     color: #a8a9b4;
-    font-size: 0.8rem;
+    font-size: 0.88rem;
     text-align: center;
 }
 
@@ -59,17 +61,17 @@ body {
 /***** Jumbotron CSS Rules *****/
 
 #home .jumbotron {
-    margin-top: 1rem;
+    margin-top: 1.1rem;
     background-color: #050d18;
 }
 
 #home h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: darkgray;
 }
 
 #home h2 {
-    font-size: 3rem;
+    font-size: 3.3rem;
     color: whitesmoke;
 }
 
@@ -79,7 +81,7 @@ body {
 
 #home p.heading {
     color: #149ddd;
-    margin-top: 1.5rem;
+    margin-top: 1.65rem;
     font-family: "Source Code Pro", monospace;
 }
 
@@ -89,19 +91,19 @@ body {
 
 #social {
     list-style-type: none;
-    margin-top: 1rem;
+    margin-top: 1.1rem;
     padding: 0;
 }
 
 #social li {
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.1rem;
     background-color: #212431;
     border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
+    width: 2.2rem;
+    height: 2.2rem;
     text-align: center;
-    margin-right: 0.9rem;
+    margin-right: 1rem;
 }
 
 #social li:hover {
@@ -115,20 +117,14 @@ body {
     height: 100%;
     color: #fff;
     border-radius: 50%;
-    margin: 0.5rem auto;
+    margin: 0.55rem auto;
 }
 
 /***** All Sections CSS *****/
 
-#about .container, 
-#skills .container {
-    margin-top: 7rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem #10162F;
-}
-
 #about .content, 
 #skills .content{
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
 }
 
 #about h3, 
@@ -143,20 +139,44 @@ body {
     color: darkgray;
 }
 
+/***** About Section CSS *****/
+
+#about .container {
+    margin-top: 7.7rem;
+    box-shadow: -0.5rem -0.5rem 0.5rem #10162F;
+} 
+
 #about h3 {
     width: 7rem;
 }
 
+#about img {
+    border: 0.55rem solid #212431;
+    width: 12.1rem;
+    height: 10.45rem;
+    margin: 1.1rem 1.1rem 0 0;
+}
+
+#about p {
+    margin-top: 1.1rem;
+}
+
 /***** Skills Section CSS *****/
 
+#skills .container {
+    margin-top: 7.7rem;
+    box-shadow: -0.5rem -0.5rem 0.5rem #10162F;
+    box-shadow: 0.5rem 0.5rem 0.5rem #10162F;
+}
+
 #skills h3 {
-    width: 4rem;
+    width: 15rem;
 }
 
 #skills ul {
     list-style: none;
     padding: 0;
-    margin-top: 1.5rem;
+    margin-top: 1.65rem;
 }
 
 #skills li {
@@ -167,7 +187,7 @@ body {
 
 #skills a {
     color: darkgray;
-    font-size: 0.7rem;
+    font-size: 0.77rem;
     font-family: "Source Code Pro", monospace;
 }
 
@@ -186,7 +206,7 @@ body {
 #frameworks,
 #infra {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 1.1rem;
 }
 
 #coding p,
@@ -194,7 +214,7 @@ body {
 #infra p {
     color: whitesmoke;
     font-family: "Source Code Pro", monospace;
-    font-size: 0.7rem;
+    font-size: 0.77rem;
     text-align: center;
     margin: auto;
 }
@@ -203,20 +223,20 @@ body {
 #frameworks i,
 #infra i {
     color: whitesmoke;
-    font-size: 1.4rem;
+    font-size: 1.54rem;
     text-align: center;
 }
 
 #coding .row,
 #frameworks .row,
 #infra .row {
-    margin-top: 1rem;
+    margin-top: 1.1rem;
 }
 
 #coding .col-10,
 #frameworks .col-10,
 #infra .col-10 {
-    padding-top: 0.2rem;
+    padding-top: 0.22rem;
 }
 
 #coding .progress,
@@ -235,12 +255,33 @@ body {
     color: darkgray;
     text-align: left;
     letter-spacing: -0.05rem;
-    font-size: 0.7rem;
+    font-size: 0.77rem;
     font-family: "Source Code Pro", sans;
-    margin-top: 0.5rem;
+    margin-top: 0.55rem;
 }
 
 #scale span {
+    color: #149ddd;
+}
+
+/***** Footer CSS *****/
+
+#footer {
+    padding-bottom: 1rem;
+}
+
+#footer .container {
+    margin-top: 7.7rem;
+}
+
+#footer div {
+    color: #a8a9b4;
+    text-align: center;
+    font-family: "Source Code Pro", monospace;
+    font-size: 0.88rem;
+}
+
+#footer a {
     color: #149ddd;
 }
 
@@ -248,11 +289,11 @@ body {
 
 @media only screen and (max-width:767px) {
     html {
-        scroll-padding-top: 14rem;
+        scroll-padding-top: 15.4rem;
     }
 
     body {
-        top: 13rem;
+        top: 14.3rem;
     }
 
     .container {
@@ -268,7 +309,7 @@ body {
     }
 
     #navbarSupportedContent #menu a {
-        width: 5rem;
+        width: 5.5rem;
         margin: 0 auto;
         text-align: center;
     }
