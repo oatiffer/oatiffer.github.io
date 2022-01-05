@@ -151,7 +151,7 @@ body {
 } 
 
 #about h3 {
-    width: 7rem;
+    width: 7.5rem;
 }
 
 #about img {
@@ -170,11 +170,11 @@ body {
 #skills .container {
     margin-top: 7.7rem;
     /*box-shadow: -0.5rem -0.5rem 0.5rem #10162F;*/
-    box-shadow: 0.5rem 0.5rem 0.5rem #10162F;
+    box-shadow: -0.5rem 0.5rem 0.5rem #10162F;
 }
 
 #skills h3 {
-    width: 15rem;
+    width: 16rem;
 }
 
 #skills p {
@@ -217,7 +217,7 @@ body {
 }
 
 #contact h3 {
-    width: 12.5rem;
+    width: 13.5rem;
 }
 
 #contact p {
